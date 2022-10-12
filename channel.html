@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtuby - Channel</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+
+  <body class="mt-5">
+    <div id="top-menu">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="index.html">Youtuby</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item active" tabindex="3">
+                <a class="nav-link" href="index.html">Suggested Videos</a>
+              </li>
+              <li class="nav-item" tabindex="4">
+                <a class="nav-link mr-lg-3" href="#">Recently Uploaded</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="#" tabindex="1"
+                  >Trending Videos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-info text-white d-inline-block"
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#loginModal"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+              />
+              <button onclick="location.href='search.html';"
+                class="btn btn-outline-success my-2 my-sm-0"
+                type="submit"
+              >
+                Search
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Sign in</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  <span>&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="email" class="col-form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="col-form-label"
+                      >Password:</label
+                    >
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <a href="">Forgot your Password</a>
+                <a href="" class="mx-auto">Create an account</a>
+                <button type="button" class="btn btn-primary">Login</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="channel-page">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="banner position-relative">
+                <img class="img-fluid" src="img/h-channel.jpg" alt="">
+                <div class="social-media position-absolute bg-secondary p-1" style="bottom: 18px; left: 20px">
+                <a href="#" title="Pingucoder">
+                  <img src="img/icons/pingu.png" alt="pingucoder">
+                  Pingucoder
+                </a>
+                <a href="#" title="Follow us on Twitter" class="ml-1">
+                  <img src="img/icons/twitter.png" alt="pingucoder">
+                  
+                </a>
+                <a href="#" title="Follow us on Facebook" class="ml-1">
+                  <img src="img/icons/facebook.png" alt="pingucoder">
+                
+                </a>
+                <a href="#" title="Pingucoder">
+                  <img src="img/icons/pingu.png" alt="pingucoder">
+                  
+                </a>
+                </div>
+                <div class="follow position-absolute "  style="bottom: 10px; left: 20px">
+                <button class="btn btn-info">Subscription 2650</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <nav class="navbar navbar-expand-lg  navbar-light bg-light mx-auto w-100 px-0">
+              <ul class="navbar-nav mx-sm-auto  pl-0">
+                <li class="nav-item active mr-2">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-lg-3" href="#">Videos</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="1"
+                    >Playlists </a
+                  >
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="1"
+                    >Channels</a
+                  >
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="1"
+                    >Discussion</a
+                  >
+                </li>    
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="1"
+                    >About</a
+                  >
+                </li>     
+
+              </ul>
+          </nav>
+        </div>
+        <div class="video-section bg-white p-2 mt-3">
+          <div class="card border-0">
+            <div class="row">
+              <div class="col-md-6">
+                <video controls poster="img/poster.png" autoplay muted loop class="w-100">
+                  <track kind="captions" src="pingu.vtt" srclang="en" label="english" default>
+                  <source src="video/pingu.webm" type="video/webm">
+                  <source src="video/pingu.mp4" type="video/mp4">
+                  Your browser does not support the video tag. <code>video</code>
+                </video>
+              </div>
+              <div class="col-md-6">
+                <div class="card-block">
+                  <a href="watch.html">
+                    <h4 class="card-title">Top Tips for Choosing the Best Freelancers </h4>
+                  </a>
+                    <p class="card-text">In this lesson, we will learn the best tips that you can follow to maintain a high employment rate for your account,
+                      And what steps should you take to hire the best freelancers?
+                    </p>
+                    <small class="text-muted">
+                     <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span> 
+                      <i class="fas fa-clock"></i> <span>10 days ago</span>
+                    </small>
+                </div>
+              </div>
+       
+            </div>
+          </div>
+        </div>
+
+        <div class="lastest-download">
+          <div class="container">
+            <h4 class="py-5">Recently Uploaded</h4>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <a href="watch.html">
+                    <img
+                      src="img/thumbnail/restful.jpg"
+                      class="card-img-top"
+                      alt="card image"
+                    />
+                    <div class="card-body p-0">
+                      <p class="card-title">
+                        Explaining the RESTful Philosophy - Learn how to build
+                        REST APIs
+                      </p>
+                    </div>
+                  </a>
+                  <div class="card-footer">
+                    <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                      <i class="fas fa-clock"></i> <span>9 days ago</span>
+                    </small>
+                  </div>
+                  <a href="channel.html" class="channel-img">
+                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle  my-2 mx-2" width="30">
+                    <span class="card-text">Pingucoder</span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <a href="watch.html">
+                    <img
+                    src="img/thumbnail/Pinguco2.jpg"
+                      class="card-img-top"
+                      alt="card image"
+                    />
+                    <div class="card-body p-0">
+                      <p class="card-title">
+                        Top Tips for Choosing the Best Freelancers
+                      </p>
+                    </div>
+                  </a>
+                  <div class="card-footer">
+                    <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                      <i class="fas fa-clock"></i> <span>9 days ago</span>
+                    </small>
+                  </div>
+                  <a href="channel.html" class="channel-img">
+                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle  my-2 mx-2" width="30">
+                    <span class="card-text">Pingucoder</span>
+                  </a>
+                </div>
+              </div> <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <a href="watch.html">
+                    <img
+                      src="img/thumbnail/Pingucoder 1.png"
+                      class="card-img-top"
+                      alt="card image"
+                    />
+                    <div class="card-body p-0">
+                      <p class="card-title">
+                        Simple steps to register
+                      </p>
+                    </div>
+                  </a>
+                  <div class="card-footer">
+                    <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                      <i class="fas fa-clock"></i> <span>12 days ago</span>
+                    </small>
+                  </div>
+                  <a href="channel.html" class="channel-img">
+                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle  my-2 mx-2" width="30">
+                    <span class="card-text">Pingucoder</span>
+                  </a>
+                </div>
+              </div> <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <a href="watch.html">
+                    <img
+                      src="img/thumbnail/frontend.jpg"
+                      class="card-img-top"
+                      alt="card image"
+                    />
+                    <div class="card-body p-0">
+                      <p class="card-title">
+                        Step-by-step Guide on User Interface Design Development
+                      </p>
+                    </div>
+                  </a>
+                  <div class="card-footer">
+                    <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                      <i class="fas fa-clock"></i> <span>9 days ago</span>
+                    </small>
+                  </div>
+                  <a href="channel.html" class="channel-img">
+                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle  my-2 mx-2" width="30">
+                    <span class="card-text">Pingucoder</span>
+                  </a>
+                </div>
+              </div> <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <a href="watch.html">
+                    <img
+                      src="img/thumbnail/Pingucoder2.png"
+                      class="card-img-top"
+                      alt="card image"
+                    />
+                    <div class="card-body p-0">
+                      <p class="card-title">
+                        How to Develop Your Skill Set to Advance Your Career
+                      </p>
+                    </div>
+                  </a>
+                  <div class="card-footer">
+                    <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                      <i class="fas fa-clock"></i> <span>78 days ago</span>
+                    </small>
+                  </div>
+                  <a href="channel.html" class="channel-img">
+                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle  my-2 mx-2" width="30">
+                    <span class="card-text">Pingucoder</span>
+                  </a>
+                </div>
+              </div> <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 p-1">
+                  <a href="watch.html">
+                    <img
+                      src="img/thumbnail/Pingucoder4.png"
+                      class="card-img-top"
+                      alt="card image"
+                    />
+                    <div class="card-body p-0">
+                      <p class="card-title">
+                        How to Hire the Best Freelancers for Creative Projects
+                      </p>
+                    </div>
+                  </a>
+                  <div class="card-footer">
+                    <small class="text-muted">
+                      <span class="d-block"><i class="fas fa-film"></i> <span>900 views</span></span>
+                      <i class="fas fa-clock"></i> <span>9 days ago</span>
+                    </small>
+                  </div>
+                  <a href="channel.html" class="channel-img">
+                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle  my-2 mx-2" width="30">
+                    <span class="card-text">Pingucoder</span>
+                  </a>
+                </div>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+
+    <script src="https://kit.fontawesome.com/597cb1f685.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
